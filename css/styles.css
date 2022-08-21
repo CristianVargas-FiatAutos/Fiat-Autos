@@ -6,36 +6,25 @@
     
 }
 
-.cabecera {
-    background-color:#E5383B;
-}
 
-.cabecera h1{
-    height: 100px;
-}
+
+
+
 
 .navegacion {
-    text-align:center;
-    background-color:#D9D9D9;
-    height: 40px;
-    margin-top: 10px;
-}
-
-.navegacion ul li {
-display: inline-block;
-margin-left: 20px;
+padding-bottom: 1px;
+padding-top: 1px;
+background-color: #D9D9D9;
 }
 
 .navegacion ul li a {   
     list-style: none;
     color: #000;
     text-decoration: none;
-    padding: 16px;
+    justify-items: center;
+    align-items: center;
 }
 
-.navegacion ul li :hover {
-    background-color: #E5383B;
-}
 
 .pie {
     background-color: #E5383B;
@@ -49,34 +38,22 @@ margin-left: 20px;
 }
 
 .titulo-fiat {
+    display: grid;
     background-color: #E5383B;
+    text-align: center;
 
 }
 
 header div img{
-margin-top: 15px;
-margin-left: 15px;
 width: 80px;
 height: 80px;
 
 }
 
-div {
-    display: flex;
-    justify-content:space-between;
-}
 
-div h1 {
-    margin-right: 725px;
-    margin-top:15px;
-}
 
-.main{
-    display: inline-block;
-    background-color: #000;
-    height: 100%;
-    width: 100%;
-}
+
+
 
 
 .titulo-usados {
@@ -86,13 +63,11 @@ div h1 {
 
 .grid-usados {
 display: grid;
-grid-template-columns: 500px 500px;
-grid-row:450px 250px 450px 250px 450px 250px;
+grid-template-columns: 5fr 5fr;
+grid-row:3fr 3fr 3fr;
 align-items: center;
 justify-content: center;
-column-gap: 300px;
-margin-top: 100px;
-margin-bottom: 100px;
+justify-items: center;
 background-color: #000;
 
 }
@@ -154,6 +129,7 @@ padding-right: 38.3%;
     grid-template-columns: 1fr 10fr;
     align-items: center;
     justify-items: center;
+    background-color: #E5383B;
  }
 
 .nav-lateral {
@@ -174,5 +150,37 @@ padding-right: 38.3%;
 
     text-decoration: none;
     color: #000;
+
+ }
+ .grid-cabezera {
+
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color:#E5383B;
+ }
+
+ .imagen-cabezera {
+    
+    width: 1fr;
+    height: 1fr;
+ }
+
+ .grid-titulo {
+    text-align: center;
+    
+ }
+
+ .grid-navegacion {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr;
+    list-style: none;
+    background-color: #D9D9D9;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
 
  }
