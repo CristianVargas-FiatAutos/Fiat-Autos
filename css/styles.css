@@ -27,6 +27,9 @@ background-color: #D9D9D9;
 
 
 .pie {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
     background-color: #E5383B;
     padding: 30px;
 
@@ -63,12 +66,13 @@ height: 80px;
 
 .grid-usados {
 display: grid;
-grid-template-columns: 5fr 5fr;
+grid-template-columns: 1fr 1fr;
 grid-row:3fr 3fr 3fr;
 align-items: center;
 justify-content: center;
 justify-items: center;
 background-color: #000;
+gap: 10px;
 
 }
 
@@ -142,14 +146,17 @@ padding-right: 38.3%;
  .texto-nav-lateral {
     list-style: none;
     text-decoration: none;
+    color: #000;
 
 
  }
 
  .texto-nav-lateral a {
-
-    text-decoration: none;
+    list-style: none;
     color: #000;
+    text-decoration: none;
+    justify-items: center;
+    align-items: center;
 
  }
  .grid-cabezera {
@@ -182,5 +189,25 @@ padding-right: 38.3%;
     align-items: center;
     text-align: center;
 
-
  }
+
+ .grid-nuevos-autos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items:center ;
+ }
+ .img-motor {
+    display: flex;
+    width: 100%;
+    height: 100%;
+ }
+
+ .grid-nuevos-autos-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    align-items:center ;
+}
