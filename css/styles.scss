@@ -135,8 +135,14 @@ padding-right: 38.3%;
     background-color: #E5383B;
  }
 
-.nav-lateral {
-
+.nav-lateral { 
+    display: grid;
+    gap: 25px;
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    justify-items: center;
+    align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -144,14 +150,14 @@ padding-right: 38.3%;
 
  .texto-nav-lateral {
     list-style: none;
-    text-decoration: none;
+    text-decoration: #000;    
     color: #000;
 
 
   a {
     list-style: none;
     color: #000;
-    text-decoration: none;
+    text-decoration:#000;
     justify-items: center;
     align-items: center;
 
@@ -179,8 +185,9 @@ padding-right: 38.3%;
  }
 
  .grid-navegacion {
+    gap: 10px;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 2fr;
     list-style: none;
     background-color: #D9D9D9;
@@ -210,3 +217,93 @@ padding-right: 38.3%;
     text-align: center;
     align-items:center ;
 }
+
+.grid-mapas {
+    justify-items: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: #000;
+}
+
+.grid-contacto {
+    display: grid;
+    justify-items: center;
+    background-color:#D9D9D9;
+    grid-template-columns: 1fr;
+}
+/* From uiverse.io by @ferlagher */
+.boton-barra {
+    position: relative;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em;
+    background-color: #BF0426;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5em;
+    color: #DEDEDE;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  }
+  
+  button::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+  
+  .boton-barra:hover::before {
+    width: 2em;
+    height: 2em;
+  }
+  
+  .boton-barra:active {
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+    transform: translate(0.1em, 0.1em);
+  }
+  /* From uiverse.io by @alexroumi */
+.boton-lateral {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .boton-lateral::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .boton-lateral:hover {
+    color: #e8e8e8;
+   }
+   
+   .boton-lateral:hover::before {
+    width: 100%;
+   }

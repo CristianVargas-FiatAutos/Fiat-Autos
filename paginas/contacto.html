@@ -5,32 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiat Autos</title>
-    <link rel="shortcut icon" href="/css/580b585b2edbce24c47b2c5e.png">
+    <link rel="shortcut icon" href="/IMG/580b585b2edbce24c47b2c5e.png">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
     <header class="cabecera">
         <div class="grid-cabezera">        
-        <img class="imagen-cabezera" src="/css/580b585b2edbce24c47b2c5e.png" alt="logo">
+        <img class="imagen-cabezera" src="/IMG/580b585b2edbce24c47b2c5e.png" alt="logo">
         <h1 class="grid-titulo">Fiat Autos</h1>
         </div>
         <nav class="navegacion">
-            <ul class="grid-navegacion">
-                <li><a href="/index.html">inicio</a></li>
-                <li><a href="nuevos.html">nuevos</a></li>
-                <li><a href="usados.html">usados</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-                <li><a href="nosotros.html">nosotros</a></li>
-            </ul>
-        </nav>
+          <ul class="grid-navegacion">
+              <button class="boton-barra">
+              <li><a href="/index.html">INICIO</a></li>
+              </button>
+              <button class="boton-barra">
+              <li><a href="nuevos.html">MODELOS</a></li>
+          </button>
+          <button class="boton-barra">
+              <li><a href="contacto.html">CONTACTO</a></li>
+          </button>
+          </ul>
+      </nav>
     </header>
-    <MAIN >    <H2 class="titulo-usados">CONTACTO</H2>
-                        <h2 class="titulo-ubicacion">Ubicacion</h2>
-         <iframe class="ubicacion"  src="https://www.google.com.ar/maps/place/Calle+819+1175,+Quilmes+Oeste,+Provincia+de+Buenos+Aires/@-34.7497949,-58.3030667,14.5z/data=!4m5!3m4!1s0x95a32db4aefefc09:0x253acd788a2f7bd6!8m2!3d-34.7556555!4d-58.3098453" width="350" height="300" frameborder="0"></iframe>
+    <MAIN >    
+        <H2 class="titulo-usados">CONTACTO</H2>
+
+                <h2 class="titulo-ubicacion">Ubicacion</h2>
+                <div class="grid-mapas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52454.11208944527!2d-58.34832715275391!3d-34.74596876226768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32c2bbfc45361%3A0xfab63031c962f1dd!2sFiat%20Zanet%20Quilmes!5e0!3m2!1ses-419!2sar!4v1664587200151!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
      <!--formulario-->
          
          <h3 class="titulo-ubicacion">datos personales</h3>
+         <div class="grid-contacto">
     <form class="datos">
         <label for="">Nombre:</label>
         
@@ -68,6 +75,7 @@
         <input type="submit">
         <input type="reset" value="Borrar">
     </form>
+</div>
 </MAIN>
 
 <footer class="pie">©Cristian Vargas 2022</footer>
